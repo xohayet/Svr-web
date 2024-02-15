@@ -35,8 +35,8 @@ async def progress_for_pyrogram(
         estimated_total_time = TimeFormatter(milliseconds=estimated_total_time)
 
         progress = "**[{0}{1}]** `| {2}%`\n\n".format(
-            ''.join([FINISHED_PROGRESS_STR for i in range(math.floor(percentage / 10))]),
-            ''.join([UN_FINISHED_PROGRESS_STR for i in range(10 - math.floor(percentage / 10))]),
+            ''.join([FINISHED_PROGRESS_STR for i in range(math.floor(percentage / 14))]),
+            ''.join([UN_FINISHED_PROGRESS_STR for i in range(14 - math.floor(percentage / 14))]),
             round(percentage, 2))
 
         tmp = progress + "├ 𝙎𝙞𝙯𝙚: {0} of {1}\n\n├ 𝙎𝙥𝙚𝙚𝙙: {2}/s\n\├ 𝙀𝙏𝘼: {3}\n"╰─⌈ 𝘽𝙤𝙩 𝙢𝙖𝙙𝙚 𝙗𝙮 DJknox ⌋──╯.format(
